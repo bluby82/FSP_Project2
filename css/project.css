@@ -1,0 +1,261 @@
+body {
+	margin-left: 20px;
+}
+
+#judul {
+	display: inline-block;
+
+	min-width: 100%;
+}
+
+#additional {
+	padding: 20px;
+	min-width: 100%;
+	display: flex;
+	column-gap: 10px;
+}
+
+@media (min-width: 1024px) {
+	#ceritaku {
+		padding-left: 20px;
+		padding-right: 20px;
+		width: 285px;
+		float: left;
+
+		display: block;
+
+		box-shadow: 0px 0px 0px 0px black, 2px 0px 0px 0px black;
+	}
+
+	#cerita {
+		padding-left: 40px;
+		padding-right: 20px;
+		width: 590px;
+		float: left;
+
+		display: block;
+
+		border-left: 2px solid black;
+	}
+
+	.cardCeritaku {
+		min-width: 225px;
+		max-width: 225px;
+		min-height: 150px;
+		max-height: 150px;
+
+		margin: 20px;
+
+		border: 1px solid black;
+
+		float: left;
+
+		clear: both;
+	}
+
+	.cardCerita {
+		min-width: 225px;
+		max-width: 225px;
+		min-height: 150px;
+		max-height: 150px;
+
+		margin: 20px;
+
+		border: 1px solid black;
+
+		float: left;
+	}
+
+	.cardCerita:nth-child(even) {
+		clear: both;
+	}
+
+	#pembatasCeritaku, #pembatasCerita {
+		clear: both;
+		min-width: 98%
+	}
+
+	#pilihan {
+		display: none;
+	}
+}
+
+@media (min-width: 576px) and (max-width: 1023px) {
+	#container {
+		display: flex;
+		flex-direction: column;
+
+		width: 550px;
+
+		position: absolute;
+		left: 50%;
+		top: 110px;
+		transform: translate(-50%,0%);
+	}
+
+	#ceritaku {
+		padding-left: 1%;
+		padding-right: 1%;
+		width: 100%;
+		float: left;
+
+		order: 2;
+
+		display: block;
+	}
+
+	#cerita {
+		padding-left: 1%;
+		padding-right: 1%;
+		width: 100%;
+		float: left;
+
+		order: 1;
+
+		display: block;
+	}
+
+	.cardCeritaku {
+		min-width: 225px;
+		max-width: 225px;
+		min-height: 150px;
+		max-height: 150px;
+
+		margin: 20px;
+
+		border: 1px solid black;
+
+		float: left;
+	}
+
+	.cardCerita {
+		min-width: 225px;
+		max-width: 225px;
+		min-height: 150px;
+		max-height: 150px;
+
+		margin: 20px;
+
+		border: 1px solid black;
+
+		float: left;
+	}
+
+	.cardCeritaku:nth-child(even) {
+		clear: both;
+	}
+
+	.cardCerita:nth-child(even) {
+		clear: both;
+	}
+
+	#pembatasCeritaku, #pembatasCerita {
+		clear: both;
+		min-width: 98%
+	}
+
+	#judul {
+		position: absolute;
+		left: 50%;
+		transform: translate(-50%,0%);
+
+		text-align: center;
+	}
+
+	#pilihan {
+		display: none;
+	}
+
+	#additional {
+		order: 3;
+		padding-left: 0px;
+	}
+}
+
+@media (max-width: 575px) {
+	#container {
+		display: flex;
+		flex-direction: column;
+
+		width: 270px;
+
+		position: absolute;
+		left: 50%;
+		top: 110px;
+		transform: translate(-50%,0%);
+	}
+
+	#ceritaku {
+		padding-left: 1%;
+		padding-right: 1%;
+		width: 100%;
+		float: left;
+
+		order: 2;	
+	}
+
+	#cerita {
+		padding-left: 1%;
+		padding-right: 1%;
+		width: 100%;
+		float: left;
+
+		order: 1;
+	}
+
+	.cardCeritaku {
+		min-width: 225px;
+		max-width: 225px;
+		min-height: 150px;
+		max-height: 150px;
+
+		margin: 20px;
+
+		border: 1px solid black;
+
+		float: left;
+	}
+
+	.cardCerita {
+		min-width: 225px;
+		max-width: 225px;
+		min-height: 150px;
+		max-height: 150px;
+
+		margin: 20px;
+
+		border: 1px solid black;
+
+		float: left;
+	}
+
+	.cardCeritaku:nth-child(even) {
+		clear: both;
+	}
+
+	.cardCerita:nth-child(even) {
+		clear: both;
+	}
+
+	#pembatasCeritaku, #pembatasCerita {
+		clear: both;
+		min-width: 98%
+	}
+
+	#judul {
+		position: absolute;
+		left: 50%;
+		transform: translate(-50%,0%);
+
+		text-align: center;
+	}
+
+	#cmbPilihan {
+		width: 270px;
+	}
+
+	#additional {
+		order: 3;
+		padding-left: 0px;
+	}
+}
